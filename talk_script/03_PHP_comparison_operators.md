@@ -1,7 +1,7 @@
 # バグになりがちな原因
 PHPが自動で型を変換
 > a variable's type is determined by the context in which the variable is used. 
-[Googleを見る][type-juggling.php]
+[*][type-juggling.php]
 
 ## 比較演算子
 下の演算子は動きが違う。
