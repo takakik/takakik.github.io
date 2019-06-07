@@ -1,10 +1,12 @@
 # バグになりがちな原因
-PHPが自動で型を変換
+PHPが自動で型変換するで、プログラムが意図しない動きをする。
+
 > a variable's type is determined by the context in which the variable is used. 
 [*][type-juggling.php]
 
 ## 比較演算子
-下の演算子は動きが違う。
+下の演算子は挙動が違う。
+
 `==`  (loose) or `===` (strict)
 
 ## 実例
@@ -29,5 +31,8 @@ echo $amount;
 使った方が？よいところ
 
 ## 参考
-[type-juggling.php]: https://www.php.net/manual/en/language.types.type-juggling.php
 https://www.php.net/manual/ja/types.comparisons.php
+
+https://www.php.net/manual/en/language.types.type-juggling.php
+
+[type-juggling.php]: https://www.php.net/manual/en/language.types.type-juggling.php
