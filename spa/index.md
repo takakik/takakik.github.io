@@ -10,27 +10,36 @@
  - Write once, run anywhere
 
 ## 開発環境を構築
-~/s4b_mobileで以下を実行。
+~/s4b_mobileでプロジェクトの初期化。
 ```
 npm init -y
 ```
-
+webpack, babelなどの開発ツールなどを、devDependenciesに追記したいため-D(--save-dev)オプションを付けてインストール。
 ```
-npm install -D webpack webpack-cli babel-loader @babel/core @babel/pre
-set-env --no-bin-link
+npm install -D webpack webpack-cli babel-loader @babel/core @babel/preset-env --no-bin-link
 ```
 ※vagrant上では、`set-env --no-bin-link`を付けないとErrorになる。
 
-webpack.config.jsを作成する。
-outputプロパティで束ね先を設定。
+実行用の「react」と「react-dom」を、dependenciesに追記したいため--saveオプションを付けてインストール
+```
+npm install --save react react-dom
+```
 
+webpack.config.jsを作成する。
+ポイントは、各プロパティで以下を設定。
+entry:束ね元
+output:束ね先
+module.rules.use.loader:babel-loaderを使う
+module.rules.use.options.presets:@babel/preset-en @babel/react
+
+webpack.config.js
 ```
 module.exports = {
   mode : "development",
-  entry : "./src/index.js",
+  entry : "./src/main.js",
   output : {
     path : __dirname + "/public/dist",
-    filename : ".js"
+    filename : "bundle.js"
   },
 
   module : {
@@ -42,7 +51,8 @@ module.exports = {
             loader: "babel-loader",
             options: {
               presets: [
-                "@babel/preset-env"
+                "@babel/preset-env",
+                "@babel/react"
               ]
             }
           }
@@ -64,4 +74,5 @@ module.exports = {
 
 ## 参考
 https://ics.media/entry/16028/  
-https://qiita.com/akirakudo/items/77c3cd49e2bf39da79dd
+https://qiita.com/akirakudo/items/77c3cd49e2bf39da79dd  
+
