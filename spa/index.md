@@ -1,4 +1,4 @@
-# react.js + babel + webpack ( + jest.js)
+# react.js + babel + webpack + redux ( + jest.js)
 
 ## 目的
 - jsx(React)を使うためにbabelを入れる
