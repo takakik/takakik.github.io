@@ -16,9 +16,9 @@ npm init -y
 ```
 webpack, babelなどの開発ツールなどを、devDependenciesに追記したいため-D(--save-dev)オプションを付けてインストール。
 ```
-npm install -D webpack webpack-cli babel-loader @babel/core @babel/preset-env --no-bin-link
+npm install -D webpack webpack-cli babel-loader @babel/core @babel/preset-env @babel/preset-reac --no-bin-link
 ```
-※vagrant上では、`set-env --no-bin-link`を付けないとErrorになる。
+※vagrant上では、`--no-bin-link`を付けないとErrorになる。
 
 実行用の「react」と「react-dom」を、dependenciesに追記したいため--saveオプションを付けてインストール
 ```
