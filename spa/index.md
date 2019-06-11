@@ -11,11 +11,15 @@
 
 ## 開発環境を構築
 ~/s4b_mobileで以下を実行。
-`npm init -y`
+```
+npm init -y
+```
 
-vagrant上では、`set-env --no-bin-link`を付けないとErrorになる。
-`npm install -D webpack webpack-cli babel-loader @babel/core @babel/pre
-set-env --no-bin-link`
+```
+npm install -D webpack webpack-cli babel-loader @babel/core @babel/pre
+set-env --no-bin-link
+```
+※vagrant上では、`set-env --no-bin-link`を付けないとErrorになる。
 
 webpack.config.jsを作成する。
 outputプロパティで束ね先を設定。
@@ -59,5 +63,5 @@ module.exports = {
 ```
 
 ## 参考
-https://ics.media/entry/16028/
+https://ics.media/entry/16028/  
 https://qiita.com/akirakudo/items/77c3cd49e2bf39da79dd
