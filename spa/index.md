@@ -1,13 +1,14 @@
 # react.js + babel + webpack ( + jest.js)
 
-##  目的
+## 目的
 - jsx(React)を使うためにbabelを入れる
-- babel + webpackでECMAScript Modulesをまとめたい
+- JSファイルをまとめることができる
 
-##  副産物
-- ES2019の仕様で記述したJSがIEに対応できる
- - 新しい言語仕様が使える
+## 副産物
+- 新しい言語仕様で記述したJSがいろんなブラウザ動く（互換性）
  - Write once, run anywhere
+ - letなどが使えて便利
+- babel + webpackでECMAScript Modulesをまとめたい
 
 ## 開発環境を構築
 ~/s4b_mobileでプロジェクトの初期化。
@@ -63,6 +64,27 @@ module.exports = {
 };
 ```
 
+
+```
+npm install webpack-dev-server --save-dev --no-bin-link
+```
+ビルドコマンドとして、package.jsonに以下を追記。
+```
+"start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --watch-content-base --conten
+t-base public/ --open-page index.html"
+````
+
+`npm run start`を実行すると開発用サーバが立ち上がる。
+ また、vagrant上の環境ではlocalhost:8081でホスト側からアクセスできないので以下をwebpack.config.jsに追記。
+ ```
+devServer: {
+  contentBase: __dirname + '/public',
+  host: "0.0.0.0"
+}
+```
+ 
+ 
+
 `npm run build`だけでbundleできるように、package.jsonを編集。
 
 ```
@@ -75,4 +97,6 @@ module.exports = {
 ## 参考
 https://ics.media/entry/16028/  
 https://qiita.com/akirakudo/items/77c3cd49e2bf39da79dd  
+https://qiita.com/riversun/items/d27f6d3ab7aaa119deab  
+https://qiita.com/msykd/items/7e72c4a942610e39b317  
 
