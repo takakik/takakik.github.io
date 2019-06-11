@@ -38,7 +38,7 @@ module.exports = {
   mode : "development",
   entry : "./src/main.js",
   output : {
-    path : __dirname + "/public/dist",
+    path : __dirname + "/public",
     filename : "bundle.js"
   },
 
