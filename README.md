@@ -1,2 +1,1 @@
 # takakik.github.io
-www
