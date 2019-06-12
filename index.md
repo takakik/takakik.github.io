@@ -5,7 +5,7 @@ You can use the [editor on GitHub](https://github.com/takakik/takakik.github.io/
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### My Linkis
-- [manuscript](https://github.com/takakik/takakik.github.io/blob/master/manuscript/index.md)
+- [manuscript](https://takakik.github.io/manuscript/)
 - [SPA](https://github.com/takakik/takakik.github.io/blob/master/spa/index.md)
 
 
