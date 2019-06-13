@@ -64,6 +64,23 @@ module.exports = {
 };
 ```
 
+拡張子jsxを使いたい場合には以下を追記。
+```javascript
+{
+  test : /\.jsx$/,
+  use : [
+    {
+     loader: "babel-loader",
+        options: {
+          presets: [
+            "@babel/preset-env",
+            "@babel/react"
+          ]
+        }
+    }
+  ]
+}
+```
 
 ```
 npm install webpack-dev-server --save-dev --no-bin-link
@@ -82,7 +99,7 @@ devServer: {
   host: "0.0.0.0"
 }
 ```
- portを指定したい場合には以下を追記
+ portを指定したい場合には以下のようにする。
  ```javascript
    devServer: {
     contentBase: __dirname + '/public',
@@ -90,7 +107,7 @@ devServer: {
     port:8040
   },
  ```
- 
+
 
 `npm run build`だけでbundleできるように、package.jsonを編集。
 
