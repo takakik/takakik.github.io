@@ -34,7 +34,7 @@ module.rules.use.loader:babel-loaderを使う
 module.rules.use.options.presets:@babel/preset-en @babel/react
 
 webpack.config.js
-```
+```javascript
 module.exports = {
   mode : "development",
   entry : "./src/main.js",
@@ -69,25 +69,32 @@ module.exports = {
 npm install webpack-dev-server --save-dev --no-bin-link
 ```
 ビルドコマンドとして、package.jsonに以下を追記。
-```
+```javascript
 "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --watch-content-base --conten
 t-base public/ --open-page index.html"
 ````
 
 `npm run start`を実行すると開発用サーバが立ち上がる。
  また、vagrant上の環境ではlocalhost:8081でホスト側からアクセスできないので以下をwebpack.config.jsに追記。
- ```
+```javascript
 devServer: {
   contentBase: __dirname + '/public',
   host: "0.0.0.0"
 }
 ```
- 
+ portを指定したい場合には以下を追記
+ ```javascript
+   devServer: {
+    contentBase: __dirname + '/public',
+    host: "0.0.0.0",
+    port:8040
+  },
+ ```
  
 
 `npm run build`だけでbundleできるように、package.jsonを編集。
 
-```
+```javascript
 "scripts": {
     "build": "./node_modules/webpack/bin/webpack.js",
     "test": "echo \"Error: no test specified\" && exit 1"
