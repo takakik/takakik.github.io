@@ -6,7 +6,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### My Linkis
 - [manuscript](https://takakik.github.io/manuscript/)
-- [SPA](https://github.com/takakik/takakik.github.io/blob/master/spa/index.md)
+- [SPA](https://takakik.github.io/spa/)
 
 
 ### Markdown
