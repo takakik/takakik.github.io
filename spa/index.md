@@ -107,8 +107,7 @@ devServer: {
     port:8040
   },
  ```
-
-
+ 
 `npm run build`だけでbundleできるように、package.jsonを編集。
 
 ```javascript
@@ -117,6 +116,44 @@ devServer: {
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 ```
+
+reduxを使いたい（使いたくなった）ので以下を実行。
+ ```
+ npm install --save redux react-redux
+ ```
+
+## ハマりポイント
+* 名前空間
+```
+src/
+|--app
+|  |--index.js
+|  `--App.jsx
+`--index.jsx
+```
+
+index.js
+```javascript
+export * from './App';
+```
+App.jsx
+```javascript
+import React from 'react';
+
+class App extends React.Component {
+}
+```
+となっていたとする。
+
+`export * from './App.jsx'`ではなく、`export * from './App'`にしたい場合、
+webpack.config.jsに
+```
+resolve: {
+  extensions: ['.js', '.jsx']
+}
+```
+を追記。
+
 
 ## 参考
 https://ics.media/entry/16028/  
