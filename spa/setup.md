@@ -154,6 +154,14 @@ resolve: {
 ```
 を追記。
 
+* ルーティング
+react-routerでルーティングがうまくいかない場合には、webpack.config.jsに
+```
+devServer: {
+    historyApiFallback: true,
+}
+```
+設定されているかを疑う！！
 
 ## 参考
 https://ics.media/entry/16028/  
