@@ -3,5 +3,6 @@
 1. [load_data_mysql](https://takakik.github.io/manuscript/02_load_data_mysql)
 1. [comparison_operators](https://takakik.github.io/manuscript/03_PHP_comparison_operators)
 ## tasks
-- [ ]  Template literals
+- [ ] Template literals
+- [ ] 
 - [x] this is an incomplete item
