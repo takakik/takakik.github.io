@@ -122,6 +122,22 @@ reduxを使いたい（使いたくなった）ので以下を実行。
  npm install --save redux react-redux
  ```
 
+## Bootstrap
+```
+npm i -D style-loader css-loader --no-bin-link
+npm i -S bootstrap jquery popper.js
+```
+
+```javascript
+{
+   test: /\.css$/,
+   use: [
+    "style-loader",
+    "css-loader"
+  ]
+}
+```
+
 ## ハマりポイント
 * 名前空間
 ```
@@ -169,5 +185,5 @@ https://qiita.com/akirakudo/items/77c3cd49e2bf39da79dd
 https://qiita.com/riversun/items/d27f6d3ab7aaa119deab  
 https://qiita.com/msykd/items/7e72c4a942610e39b317  
 https://qiita.com/ryusaka/items/d9afdec9baf34b9b6e41  
-
+https://ics.media/entry/17749/
 
