@@ -9,7 +9,11 @@
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <!-- Your custom script here -->
 <script type="text/babel">
-const getMessage = () => "Hello World";
+var a = 5;
+var b = 10;
+var c = "Fifteen is " + (a + b) + " and\nnot " + (2 * a + b) + ".";
+
+const getMessage = () => c;
 document.getElementById('output').innerHTML = getMessage();
 </script>
 </body>
