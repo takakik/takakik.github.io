@@ -128,6 +128,11 @@ npm i -D style-loader css-loader --no-bin-link
 npm i -S bootstrap jquery popper.js
 ```
 
+## React Intl
+```
+npm i react-localization
+```
+
 ```javascript
 {
    test: /\.css$/,
