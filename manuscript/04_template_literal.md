@@ -1,7 +1,7 @@
 ## template literal
 ECMAScript6(ECMAScript2015)の新機能
 ```js
-\`string text ${expression} string text\`
+`string text ${expression} string text`
 ```
 
 ### JSのバージョン（2019年6月21日現在）
