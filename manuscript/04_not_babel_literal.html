@@ -9,12 +9,11 @@
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <!-- Your custom script here -->
 <script type="text/javascript">
-    var a = 5;
-    var b = 10;
-    let c = () => { return `Fifteen is ${a + b} and\nnot ${2 * a + b}.`; };
-    console.log(c());
-</script>
-<script type="text/babel">
+  let cate_id = 5;
+  let product_id = 10;
+  let num = 3;
+  let get_url = () => { let unit = 100; return `/${cate_id}/${prodcut_id}/?sum=${unit * num}.`; };
+  document.getElementById(output).innerHTML = get_url();
 </script>
 </body>
 </html>
