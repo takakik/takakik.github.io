@@ -143,6 +143,11 @@ npm i react-localization
 }
 ```
 
+Typechecking With PropTypes
+```
+npm i prop-types
+```
+
 ## ハマりポイント
 * 名前空間
 ```
