@@ -143,6 +143,10 @@ npm i react-localization
 }
 ```
 
+```
+npm i @babel/plugin-proposal-private-methods
+```
+
 Typechecking With PropTypes
 ```
 npm i prop-types
