@@ -184,6 +184,13 @@ resolve: {
 ```
 を追記。
 
+
+## WeakSetを回避(IE)
+When true, private methods will be assigned directly on its parent via Object.defineProperty rather than a WeakSet. This results in improved performance and debugging (normal property access vs .get()) at the expense of potentially leaking "privates" via things like Object.getOwnPropertyNames.
+
+## listen port
+portを変更するとLive Reloadがうまくうごかない。。。
+
 * ルーティング
 react-routerでルーティングがうまくいかない場合には、webpack.config.jsに
 ```
