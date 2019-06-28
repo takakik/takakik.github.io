@@ -145,6 +145,7 @@ npm i react-localization
 
 ```
 npm i @babel/plugin-proposal-private-methods
+npm i @babel/plugin-proposal-class-properties
 ```
 
 Typechecking With PropTypes
@@ -153,6 +154,7 @@ npm i prop-types
 ```
 
 ```
+npm i core-js
 npm i redux-thunk
 ```
 
