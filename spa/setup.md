@@ -200,6 +200,11 @@ devServer: {
 ```
 設定されているかを疑う！！
 
+## redux-thunk
+```
+
+```
+
 ## 参考
 https://ics.media/entry/16028/  
 https://qiita.com/akirakudo/items/77c3cd49e2bf39da79dd  
