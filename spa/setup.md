@@ -152,6 +152,10 @@ Typechecking With PropTypes
 npm i prop-types
 ```
 
+```
+npm i redux-thunk
+```
+
 ## ハマりポイント
 * 名前空間
 ```
