@@ -156,6 +156,7 @@ npm i prop-types
 ```
 npm i core-js
 npm i redux-thunk
+npm i whatwg-fetch
 ```
 
 ## ハマりポイント
