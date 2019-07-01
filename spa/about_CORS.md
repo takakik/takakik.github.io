@@ -1,6 +1,7 @@
 ## 
 ## Links
 * https://dev.classmethod.jp/etc/about-cors/
+* https://github.com/github/fetch
 * https://developer.mozilla.org/ja/docs/Web/API/Fetch_API/Using_Fetch
 * https://developer.mozilla.org/ja/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data
 * https://qiita.com/masakielastic/items/70516e074eadf2ce09dd
