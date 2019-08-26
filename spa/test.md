@@ -15,3 +15,9 @@ sudo apt-get install libnss3
 ```
 sudo apt-get install libxss1
 ```
+
+puppeteerの起動、終了をするための下記ファイルを作成[*](https://jestjs.io/docs/ja/puppeteer){:target="_blank"}
+
+```
+jest.config.js setup.js teardown.js
+```
