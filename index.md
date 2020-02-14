@@ -1,7 +1,7 @@
 ## My Linkis
 - [manuscript](https://takakik.github.io/manuscript/)
 - [SPA](https://takakik.github.io/spa/)
-- [old top](https://takakik.github.io/_index)
+- [old top](https://takakik.github.io/old_index)
 
 
 ## Welcome to GitHub Pages
